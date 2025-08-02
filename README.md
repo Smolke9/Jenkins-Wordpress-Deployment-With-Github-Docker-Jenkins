@@ -143,7 +143,7 @@ networks:
   wp-network:
 
 ```
-
+![Screenshot 1](Screenshot/1.jpg)
 3. **Initialize Git repo**:
 
 ```bash
@@ -171,7 +171,7 @@ git commit -m "Initial WordPress Docker setup"
 git branch -M main
 git push origin main
 ```
-
+![Screenshot 1](Screenshot/2.jpg)
 ---
 
 ## ⚙️ Step 5: Configure Jenkins Freestyle Job
@@ -202,6 +202,10 @@ docker-compose down || true
 docker-compose up -d
 ```
 
+![Screenshot 1](Screenshot/4.jpg)
+
+![Screenshot 1](Screenshot/5.jpg)
+
 ---
 
 ## 🔗 Step 6: Set Up GitHub Webhook
@@ -212,7 +216,7 @@ docker-compose up -d
    - Content type: `application/json`
    - Events: Just the push event
    - Save
-
+![Screenshot 1](Screenshot/3.jpg)
 ---
 
 ## 🧪 Step 7: Build and Verify Deployment
@@ -222,9 +226,12 @@ docker-compose up -d
 3. Monitor **Console Output**
 4. Visit: `http://<EC2-PUBLIC-IP>:8081` → You should see the WordPress setup screen
 
+![Screenshot 1](Screenshot/6.jpg)
 ---
 
 ## 🎉 Result
-
+![Screenshot 1](Screenshot/7.jpg)
+![Screenshot 1](Screenshot/8.jpg)
+![Screenshot 1](Screenshot/9.jpg)
 You have successfully automated WordPress deployment using Jenkins Freestyle Job, GitHub, Docker Compose with WordPress, MySQL, and NGINX running on an AWS EC2 Ubuntu instance!
 
